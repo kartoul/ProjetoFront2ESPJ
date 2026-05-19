@@ -161,7 +161,8 @@ header nav ul li a:hover{
         position:absolute;
         top:80px;
         left:0;
-        background:var(--color2);
+        width:100%;
+        background:var(--color3);
         flex-direction:column;
         padding:20px;
     }
@@ -172,4 +173,7 @@ header nav ul li a:hover{
         flex-direction:column;
         text-align:center;
     }
+    .open span:nth-child(1){transform:rotate(45deg)translate(5px, 5px);}
+    .open span:nth-child(2){opacity:0}
+    .open span:nth-child(3){transform:rotate(-45deg)translate(7px, -7px);}
 }

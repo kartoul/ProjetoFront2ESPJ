@@ -1,7 +1,3 @@
-function trocar(cor){
-    document.body.style.background=cor;
-}
-
 window.onload = function(){
     const intro = document.getElementById("inicio");
 
@@ -14,5 +10,22 @@ window.onload = function(){
             content.classList.add("efeito-in");
         },1000)
 },3000)
+};
 
-}
+function trocar(cor){
+    document.body.style.background=cor;
+};
+
+
+// menu hamburger
+
+document.addEventListener("DOMContentLoaded",()=>{
+    const menuIcone = document.getElementById("menu-icone")
+    const navMenu = document.querySelector("nav");
+    if(menuIcone && navMenu){
+        menuIcone.onclick=()=>{
+            navMenu.classList.toggle("active");
+            menuIcone.classList.toggle("open")
+        }
+    }
+});
